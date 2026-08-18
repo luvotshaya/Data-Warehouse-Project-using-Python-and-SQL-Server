@@ -42,6 +42,7 @@ Everything is for Free!
 - **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** GUI for managing and interacting with databases.
 - **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
 - **[Python](https://www.python.org/downloads/):** Python is a high-level, versatile programming language used ingest files.
+- **[LinkedIn](https://www.linkedin.com/in/luvo-tshaya-6800667b/):** Lightweight server for hosting your SQL database
 ---
 
 ## 🚀 Project Requirements
@@ -90,14 +91,15 @@ python-formula1-de/
 ├── LICENSE                             # License information for the repository
 ├── .gitignore                          # Files and directories to be ignored by Git
 └── requirements.txt                    # Dependencies and requirements for the project
-
+```
 ---
 
 ## ☕ Stay Connected
 
-Let's stay in touch! Feel free to connect with me on the following platforms:
+Let's stay in touch! Feel free to connect with me on the following platform:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luvo-tshaya-6800667b/)
+
 
 
 ---
