@@ -195,3 +195,38 @@ BEGIN
     TRUNCATE TABLE bronze.drivers
 END;
 GO
+
+USE [dbFormula1DE]
+GO
+
+
+
+CREATE OR ALTER FUNCTION [bronze].[CapitalizedText] (@InputString VARCHAR(4000))
+RETURNS VARCHAR(4000)
+AS
+BEGIN
+    DECLARE @Index INT = 1;
+    DECLARE @Char CHAR(1);
+    DECLARE @PrevChar CHAR(1) = ' ';
+    DECLARE @OutputString VARCHAR(4000) = LOWER(@InputString);
+
+    WHILE @Index <= LEN(@InputString)
+    BEGIN
+        SET @Char = SUBSTRING(@InputString, @Index, 1);
+        
+        -- Capitalize if the previous character was a space or specific punctuation
+        IF @PrevChar IN (' ', '-', '/', '_', '.')
+        BEGIN
+            SET @OutputString = STUFF(@OutputString, @Index, 1, UPPER(@Char));
+        END
+        
+        SET @PrevChar = @Char;
+        SET @Index = @Index + 1;
+    END
+
+    RETURN @OutputString;
+END;
+GO
+
+
+
